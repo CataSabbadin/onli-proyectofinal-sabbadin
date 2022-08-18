@@ -1,0 +1,361 @@
+/* parametros generales */ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* fonts */ 
+
+@font-face {
+    font-family:"lemon" ;
+    src: url(../LEMONMILK-Regular.ttf); 
+    
+}
+@font-face {
+    font-family:"retro" ;
+    src: url(../Retrolight.ttf); 
+    
+}
+
+/* carrusel */
+.foto-carrusel{ 
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+/* header navegable  */
+.texto-nav:hover{
+    transform: scale(1.5);
+    transition:all .3s ease-in-out;
+}
+
+.header-container{
+    font-size: 2.5rem;
+    font-family: "retro";
+    display: flex;  
+    justify-content: space-around;
+    background-color: #68A7AD;
+}
+
+li a{
+    text-decoration:none;
+    color: #82DBD8;
+    font-weight:light;
+}
+
+.header-navegable{
+    width: 70%;
+}
+.menu-navegable{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* seccion 2 */
+.logo{
+    width: 250px;
+    height: auto;
+}
+
+.logo-texto{
+    font-family: "retro";
+    background-color: #99C4C8;
+    
+}
+
+.section2{
+    background-color: whitesmoke;
+    background: #E5CB9F;
+}
+
+h1{
+    font-family: "retro";
+    font-size: 6rem;
+    color: whitesmoke;
+    padding: 2rem;
+    font-weight:lighter;
+}
+
+h2{
+    font-family: "retro";
+    font-size: 4rem;
+    text-align:center ;
+    color:black;
+    padding: 2rem;
+    font-weight: lighter;
+}
+
+h3{
+    font-family: "retro";
+    font-size: 2.5rem;
+    text-align: center ;
+    color: #2F8F9D;
+    padding: 2rem;
+}
+
+h5{
+    font-family: "lemon", solid ;
+    font-size: 2rem;
+    text-align: center;
+}
+header{
+    font-family: "retro";
+    font-size: 1.5rem;
+}
+
+/* redes y footer */
+
+.titulo-redes{
+display: flex;
+}
+
+.redes-footer{
+display: flex;
+width:fit-content;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content:space-around;
+}
+
+.logo-footer-item{
+    width: 100px;
+    height: 100px;
+}
+.logo-redes{
+    width: 40px;
+    width: 40px;
+}
+
+/* formulario contacto */
+
+.contact_form{
+    font-family: "lemon";
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    overflow: auto;
+    padding: 10px;
+    border: 3px solid #68A7AD;
+}
+
+/* login */
+
+.loginform{
+    font-family: "lemon";
+    font-size: 2rem; 
+    color: black;
+    text-align: center;
+    background-color: #68A7AD;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    overflow:visible;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+
+.ph-center::-webkit-input-placeholder {
+        text-align: center;
+}
+
+.boton-login{
+    font-family: "lemon";
+    font-size: 2rem;
+    color: #68A7AD;
+    background-color: whitesmoke;
+    margin: 0.5rem;
+    padding: 0.5rem ;
+}
+.login li{
+list-style: none;
+}
+
+/* galeria carrusel */
+
+.card-text1{
+    font-size: 4rem;
+    font-family: "retro";
+}
+.btn-1{
+    font-size: 3rem;
+    color:#2F8F9D;
+    text-decoration: none;
+    font-family: "retro";
+    border: solid 0.2rem #2F8F9D;
+    background-color:#E5CB9F;
+    padding: 0.5rem;
+}
+
+/* catalogo */
+
+.card-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 15px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+
+/* footer  */
+
+footer{
+    font-family: "lemon";
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: #EEE4AB;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    font-family: "retro";
+    font-size: 3rem;
+    border: 2px solid;
+    color:#3BACB6;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+/* media queries- responsive */ 
+
+/* mobile */ 
+
+@media (max-width:450px) {
+
+    /* galeria principal */ 
+.card-text1{
+    font-size: 2rem;
+}
+.btn-1{
+    font-size: 1rem;
+}
+
+    /* catalogo  */ 
+
+.card-contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+
+}
+.card-img-top {
+    grid-column: 1;
+    grid-row: 1;
+    object-fit:fill;
+}
+
+    /* contacto */
+
+    .contact_form{
+        font-size: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        padding: 5px;
+        border: 1px solid #68A7AD;
+    }
+    
+    /* login */
+
+    .loginform{
+        font-size: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        padding: 5px;
+        border: 1px solid #68A7AD;
+    }
+    
+         /* texto */ 
+    h1{
+    font-size: 2rem; 
+    }
+    h2{
+    font-size: 1.5rem;
+    }
+    h3{
+    font-size: 1rem;
+    }
+    h4{
+    font-size: 0.5rem ;
+    }
+    button{
+    font-size: 1rem;
+    }
+
+    /* barra nav */ 
+
+    .header-container{
+        font-size: 0.9rem;
+    }
+    .header-navegable{
+        width: 100%;
+    }
+
+    /*logos*/ 
+
+    .logo{
+        width: 120px;
+        height: 120px;
+    }
+    .logo-footer-item{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-redes{
+        width: 20px;
+        width: 20px;
+    }
+}
+
+/* tablet*/ 
+@media (min-width:451px) and (max-width:960px){
+    
+    /* barra nav */ 
+.header-container{
+    font-size: 2rem;
+}
+.header-navegable{
+    width: 100%;
+}
+
+ /* login */
+
+ .loginform{
+    font-size: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    padding: 10px;
+    border: 2px solid #68A7AD;
+}
+
+.boton-login{
+    font-size: 0.5rem;
+    margin: 0.2rem;
+    padding: 0.2rem ;
+}
+
+
+}

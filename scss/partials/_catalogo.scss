@@ -1,0 +1,45 @@
+/* catalogo */
+
+.card-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 15px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+.btn-catalogo{
+    font-size: 1.5rem;
+    color:#2F8F9D;
+    text-decoration: none;
+    font-family: "lemon";
+    border: solid  0.2rem #2F8F9D;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer  */
+
+footer{
+    font-family: "lemon";
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: #EEE4AB;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    font-family: "retro";
+    font-size: 3rem;
+    border: 2px solid;
+    color:#3BACB6;
+    padding: 1rem;
+    margin: 2rem;
+}

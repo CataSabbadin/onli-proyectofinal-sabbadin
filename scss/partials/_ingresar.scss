@@ -1,0 +1,90 @@
+/* login */
+
+.ph-center::-webkit-input-placeholder {
+        text-align: center;      
+}
+.boton-login{
+    font-family: "lemon";
+    font-size: 2rem;
+    color: #193639;
+    border: 2px solid black;
+    background-color: whitesmoke ;
+    margin: 0.5rem;
+    padding: 0.5rem ;
+}
+.login li{
+list-style: none;
+}
+/* footer  */
+
+footer{
+    font-family: "lemon";
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: #EEE4AB;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    font-family: "retro";
+    font-size: 3rem;
+    border: 2px solid;
+    color:#3BACB6;
+    padding: 1rem;
+    margin: 2rem;
+}
+@media (max-width:450px) {
+    .loginform{
+        font-size: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        padding: 5px;
+        border: 1px solid #68A7AD;
+    }
+    
+    .boton-login{
+        font-size: 0.9rem;
+        margin: 0.2rem;
+        padding: 0.2rem ;
+    }
+
+    .ph-center{
+        font-size: 0.8rem;
+        color: black;
+        line-height: 1px;
+        line-break: auto;
+    }
+}
+
+
+@media (min-width:451px) and (max-width:960px) {
+ /* barra nav */ 
+ .header-container{
+    font-size: 2rem;
+}
+.header-navegable{
+    width: 100%;
+}
+
+ /* login */
+
+.loginform{
+    font-size: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    padding: 5px;
+    border: 2px solid #68A7AD;
+}
+
+.boton-login{
+    font-size: 0.9rem;
+    margin: 0.2rem;
+    padding: 2rem ;
+}
+
+} 

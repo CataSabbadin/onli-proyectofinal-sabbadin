@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="Imagenes/LOGO-ONLI.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto para dudas, consultas, coordinar visitas y sugerencias">
+    <meta name="keywords"  content="FORMULARIO CONTACTO, CONTACTO, DUDAS, CONSULTAS, VISITA">
+
+</head>
+
+<body>
+    <!--Menú navegable-->
+    <section class="section1">
+        <header class="header-container">
+            <nav class="header-navegable">
+                <ul class="menu-navegable">
+                    <li class="texto-nav">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="texto-nav">
+                        <a href="catalogo.html">Catálogo</a>
+                    <li class="texto-nav">
+                        <a href="contacto.html" class="texto-nav">Contacto</a>
+                    </li>
+                    <li class="texto-nav">
+                        <a href="ingresar.html" class="texto-nav">Ingresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <section class="logo-texto">
+        <center> <img src="Imagenes/LOGO ONLI (1).png" alt="logo" class="logo">
+            <h1 class="animate__animated animate__zoomIn">Tienda de garaje online</h1>
+        </center>
+    </section>
+
+    <main>
+      <h2>Formulario de contacto</h2>
+      <div class="contact_form">
+           <div class="formulario">      
+              <h3>Dejanos tu consulta y en breve nos pondremos en contacto</h3>
+               <form action="submeter-formulario.php" method="post">       
+                           <p>
+                          <label  for="Nombre" class="colocar_nombre">Nombre                           <span class="obligatorio">*</span>
+                          </label>
+                            <input class="ph-center" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      <br>
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input class="ph-center" type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                        <br>
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input class="ph-center" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                        <br>                   
+                        <p>
+                          <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input class="ph-center" type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                        <br>
+                        <p>
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                          <textarea class="ph-center" name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                        </p>                    
+                        <br>
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                        <p class="aviso">
+                          <br>
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>          
+                        <br>
+                  </form>
+            </div>  
+        </div>  
+        </main
+    
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
