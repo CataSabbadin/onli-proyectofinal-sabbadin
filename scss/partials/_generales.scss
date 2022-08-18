@@ -225,28 +225,12 @@ footer{
     justify-content: space-around;
 }
 
-button{
-    font-family: "retro";
-    font-size: 3rem;
-    border: 2px solid;
-    color:#3BACB6;
-    padding: 1rem;
-    margin: 2rem;
-}
 
 /* media queries- responsive */ 
 
 /* mobile */ 
 
 @media (max-width:450px) {
-
-    /* galeria principal */ 
-.card-text1{
-    font-size: 2rem;
-}
-.btn-1{
-    font-size: 1rem;
-}
 
     /* catalogo  */ 
 
@@ -262,17 +246,7 @@ button{
     object-fit:fill;
 }
 
-    /* contacto */
 
-    .contact_form{
-        font-size: 1rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
-        margin-top: 1rem;
-        padding: 5px;
-        border: 1px solid #68A7AD;
-    }
     
     /* login */
 
@@ -299,10 +273,10 @@ button{
     h4{
     font-size: 0.5rem ;
     }
-    button{
-    font-size: 1rem;
-    }
-
+   
+    h5{
+    font-size: 0.7rem;
+}
     /* barra nav */ 
 
     .header-container{
@@ -314,18 +288,7 @@ button{
 
     /*logos*/ 
 
-    .logo{
-        width: 120px;
-        height: 120px;
-    }
-    .logo-footer-item{
-        width: 50px;
-        height: 50px;
-    }
-    .logo-redes{
-        width: 20px;
-        width: 20px;
-    }
+    
 }
 
 /* tablet*/ 
